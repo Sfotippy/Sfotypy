@@ -1,0 +1,188 @@
+@import "normalize.styl"
+@import "fonts.styl"
+/*em : Toma el font-size del padre; rem toma el font-size del body*/
+
+gris_oscuro = #333333
+gris_claro  = #818181
+rojo-claro  = #BD255B
+gray-body   = #F5F5F5
+a
+	text-decoration none
+body	
+	background gray-body
+	font-family: 'Varela Round', sans-serif;
+	font-size 16px	
+figure 
+	margin 0
+img 
+	vertical-align top
+//OOCSS   Css orientado a clases
+//___________________________________________
+
+.center-block //Los elementos con la propiedad display: block se centran si titnen un ancho fijo
+	margin 0 auto
+	
+.center-text
+	text-align center
+//___________________________________________
+
+.header
+	height 3.5em
+	position relative
+	.title
+		font-size 1.1em	
+		line-height 3.5em
+		margin 0 
+		text-align center
+	.button-menu
+		color gris_oscuro
+		left 0.3em
+		margin-top -18px
+		position absolute
+		top 50%
+
+.gray-border
+	border-bottom 1px solid gris_claro			
+
+.container
+	font-size 0	
+	padding 1.4rem
+	text-align center
+	
+.menu
+	display none
+
+.song
+	display inline-block
+	font-size 1rem
+	margin-bottom 1em
+	margin-right 1em 
+	text-align left
+	width 8rem
+	&:nth-child(even)	
+		margin-right 0
+	p
+		margin 0.5em 0
+
+.song-title
+	color gris_oscuro
+	margin-bottom 0
+	
+.artist
+	padding-top 0
+	margin-top 0.4em
+	color gris_claro
+	
+.playing
+	//display none
+	&.small
+		width 20em	
+	.image
+		position relative	
+	.actions
+		background rgba(black, .3)
+		bottom 0  //se posicionara en la parte superior del elemento con posicionamiento relative mas cercano
+		left 0
+		padding 1em
+		position absolute
+		right 0 
+		text-align right	
+	.action
+		color white
+		font-size 1.7em
+		margin 0 0.4em
+		&.gray
+			color gris_claro		
+		&:hover
+			color gris_oscuro	
+				
+.pading
+	padding 1em
+.music-player
+	padding 1em 0	
+
+.progress
+	margin 1em 0
+	font-size 0.8em 
+	position relative
+	.min
+		position absolute
+		left 0
+		top -5px
+	.max
+		position absolute
+		right 0
+		top -5px
+	.total
+		//margin 0 auto
+		background gris_claro
+		border-radius 6px		
+		height 6px
+		//width 78%
+		width auto
+		margin 0 3em				
+	.state
+		background rojo-claro
+		border-radius 6px		
+		height 6px
+		position relative
+		width 30%
+	.circle
+		background gris_oscuro			
+		border-radius 50%
+		height 12px
+		position absolute
+		right 0 
+		top -3px
+		width 12px
+		&:hover
+			transition 0.2s
+			transform scale(1.2, 1.2)
+.wrap
+	width 1000px
+	margin 0 auto	
+.left
+	float left
+.right
+	float right			
+.inlineBlock
+	display inline-block	
+.round
+	border-radius 50%
+	overflow hidden
+//Media queries
+
+@media screen and (min-width:480px)	
+
+	.song
+		&:nth-child(even)
+			margin-right 1em
+	.image
+		img
+			width 100%
+			height auto
+	.playing
+		&.medium
+			width auto
+			
+		
+
+@media screen and (min-width:1000px)
+
+	.button-menu
+		display none
+	.header
+		height auto
+		.title	
+			display none
+	.isotipo
+		width 122px
+	.logo
+		padding 1.3em 0
+		overflow hidden
+	.avatar
+		height 38px
+		width 38px	
+
+
+
