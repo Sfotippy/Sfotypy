@@ -6,37 +6,39 @@
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />	
 	<title>Sfotipy</title>
 	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="stylus/estilos.css">
+	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 	<header class="header relative gray-border">
 		<div class="logo">
 			<div class="wrap">
-				<figure class="image isotipo inlineBlock">
+				<figure class="image isotipo">
 					<img src="img/logo.png" alt="sfotipy" width="50" height="50"  />
 				</figure>									
-				<div class="user right inlineBlock">
+				<div class="user fixlay">
 						<figure class="avatar round left">
-							<img src="img/avatares/avatar.jpg" width="38" height="38" />
+							<img src="img/avatares/avatar1.png" width="38" height="38" />
 						</figure>
 						<span class="username left">
 							@Sebastianp
 						</span>
 				</div>
-				<div class="search right inlineBlock">
-						Search
-				</div>		
+				<div class="search fixlay">
+						<form action="" class="relative">
+						<span class="icon-search search-icon"></span>
+						<span class="icon-x salir-icon"></span>
+							<input type="text" placeholder="ejemp: SebastianP" class="input">
+						</form>
+				</div>							
 			</div>				
 		</div>			
 		<a href="" class="button-menu icon-list"></a>
 		<nav class="menu">
-			<ul class="list">
+			<ul class="list center-block wrap">
 				<li class="item"><a href="#">Top Hits</a></li>
-				<li class="item"><a href="#">Play List</a></li>
-				<li class="item"><a href="#">Top Hits</a></li>
-				<li class="item"><a href="#">Top Hits</a></li>
-				<li class="item"><a href="#">Top Hits</a></li>
-				<li class="item"><a href="#">Top Hits</a></li>
+				<li class="item"><a href="#">Profile</a></li>
+				<li class="item"><a href="#">Settings</a></li>
+				<li class="item"><a href="#">Playlist</a></li>
 			</ul>
 		</nav>
 		<div class="title">
@@ -47,46 +49,137 @@
 	</header>
 
 	<!-- ********************************************************************************************************** -->
-	<section class="playing small medium center-block">
-		<figure class="image">
-			<img src="img/songs/girl.jpg" alt="Come get It Bae Pharell Williams" width="320" height="320" />
-			<div class="actions">
-				<a href="#" class="action icon-añadir"></a>
-				<a href="#" class="action icon-heart"></a>
-				<a href="#" class="action icon-salir"></a>				
-			</div>
-		</figure>
-
-		<div class="pading">
-			<div class="progress">
-				<span class="min">
-					1:27
-				</span>			
-				<div class="total">
-					<div class="state">
-						<a href="#"><div class="circle"></div>
-						</a>
-					</div>
+	<section class="playing small medium large">
+		<div class="music">
+			<figure class="image">
+				<img src="img/songs/girl.jpg" alt="Come get It Bae Pharell Williams" width="320" height="320" />
+				<div class="actions">
+					<a href="#" class="action icon-añadir"></a>
+					<a href="#" class="action icon-heart"></a>
+					<a href="#" class="action icon-salir"></a>				
 				</div>
-				<span class="max">
-					4:10
-				</span>
+			</figure>
+			<div class="pading">				<div class="progress">
+					<span class="min">
+						1:27
+					</span>			
+					<div class="total">
+						<div class="state">
+							<a href="#"><div class="circle"></div>
+							</a>
+						</div>
+					</div>
+					<span class="max">
+						4:10
+					</span>
+				</div>
+				<div class="description center-text gray-border">
+					<p class="song-title">
+						Come get It Bae
+					</p>
+					<p class="artist">
+						Pharell Williams				
+					</p>
+				</div>
+				<div class="music-player center-text">
+					<a href="#" class="action gray icon-prev"></a>
+					<a href="#" class="action gray icon-play"></a>
+					<a href="#" class="action gray icon-next"></a>
+					<a href="#" class="action gray icon-random"></a>
+					<a href="#" class="action gray icon-volume"></a>
+				</div>			
 			</div>
-			<div class="description center-text gray-border">
-				<p class="song-title">
-					Come get It Bae
-				</p>
-				<p class="artist">
-					Pharell Williams				
-				</p>
-			</div>
-			<div class="music-player center-text">
-				<a href="#" class="action gray icon-prev"></a>
-				<a href="#" class="action gray icon-play"></a>
-				<a href="#" class="action gray icon-next"></a>
-				<a href="#" class="action gray icon-random"></a>
-				<a href="#" class="action gray icon-volume"></a>
-			</div>
+		</div>
+
+		<div class="playlist right">
+			<p class="song-title song-album">
+				Girl
+			</p>
+			<p class="artist">
+				Pharell Williams							
+			</p>
+			<ul class="list">
+				<li class="item gray-border">
+					<span>
+						Marilyn Monroe
+					</span>
+					<span class="right">
+						<a href="#" class="action icon-añadir gray"></a>
+						<a href="#" class="action icon-heart gray"></a>
+						<a href="#" class="action icon-salir gray"></a>						
+					</span>
+				</li>		
+				<li class="item gray-border">
+					<span>
+						Brand New
+					</span>
+					<span class="right">
+						<a href="#" class="action icon-añadir gray"></a>
+						<a href="#" class="action icon-heart gray"></a>
+						<a href="#" class="action icon-salir gray"></a>						
+					</span>
+				</li>				
+				<li class="item gray-border">
+					<span>
+						Happy
+					</span>
+					<span class="right">
+						<a href="#" class="action icon-añadir gray"></a>
+						<a href="#" class="action icon-heart gray"></a>
+						<a href="#" class="action icon-salir gray"></a>						
+					</span>
+				</li>			
+				<li class="item gray-border">
+					<span>
+						Gush
+					</span>
+					<span class="right">
+						<a href="#" class="action icon-añadir gray"></a>
+						<a href="#" class="action icon-heart gray"></a>
+						<a href="#" class="action icon-salir gray"></a>						
+					</span>
+				</li>				
+				<li class="item gray-border">
+					<span>
+						Hunter
+					</span>
+					<span class="right">
+						<a href="#" class="action icon-añadir gray"></a>
+						<a href="#" class="action icon-heart gray"></a>
+						<a href="#" class="action icon-salir gray"></a>						
+					</span>
+				</li>			
+				<li class="item gray-border">
+					<span>
+						Come Get It Bae
+					</span>
+					<span class="right">
+						<a href="#" class="action icon-añadir gray"></a>
+						<a href="#" class="action icon-heart gray"></a>
+						<a href="#" class="action icon-salir gray"></a>						
+					</span>
+				</li>			
+				<li class="item gray-border">
+					<span>
+						Gust of Wind
+					</span>
+					<span class="right">
+						<a href="#" class="action icon-añadir gray"></a>
+						<a href="#" class="action icon-heart gray"></a>
+						<a href="#" class="action icon-salir gray"></a>						
+					</span>
+				</li>	
+				<li class="item gray-border">
+					<span>
+						Lost Queen
+					</span>
+					<span class="right">
+						<a href="#" class="action icon-añadir gray"></a>
+						<a href="#" class="action icon-heart gray"></a>
+						<a href="#" class="action icon-salir gray"></a>						
+					</span>
+				</li>				
+			</ul>
 		</div>
 	</section>
 	<!-- ********************************************************************************************************** -->
@@ -223,6 +316,72 @@
 			</p>
 		</artice>	
 
+		<artice class="song">
+			<figure class="image">
+				<img src="img/songs/girl.jpg" height="128" width="128" alt="Girl Pharell Williams" />
+			</figure>
+			<p class="song-title">
+				Girl
+			</p>
+			<p class="artist">
+				Pharell Williams
+			</p>
+		</artice>
+		<artice class="song">
+			<figure class="image">
+				<img src="img/songs/girl.jpg" height="128" width="128" alt="Girl Pharell Williams" />
+			</figure>
+			<p class="song-title">
+				Girl
+			</p>
+			<p class="artist">
+				Pharell Williams
+			</p>
+		</artice>	
+		<artice class="song">
+			<figure class="image">
+				<img src="img/songs/girl.jpg" height="128" width="128" alt="Girl Pharell Williams" />
+			</figure>
+			<p class="song-title">
+				Girl
+			</p>
+			<p class="artist">
+				Pharell Williams
+			</p>
+		</artice>		
+		<artice class="song">
+			<figure class="image">
+				<img src="img/songs/girl.jpg" height="128" width="128" alt="Girl Pharell Williams" />
+			</figure>
+			<p class="song-title">
+				Girl
+			</p>
+			<p class="artist">
+				Pharell Williams
+			</p>
+		</artice>		
+		<artice class="song">
+			<figure class="image">
+				<img src="img/songs/girl.jpg" height="128" width="128" alt="Girl Pharell Williams" />
+			</figure>
+			<p class="song-title">
+				Girl
+			</p>
+			<p class="artist">
+				Pharell Williams
+			</p>
+		</artice>		
+		<artice class="song">
+			<figure class="image">
+				<img src="img/songs/girl.jpg" height="128" width="128" alt="Girl Pharell Williams" />
+			</figure>
+			<p class="song-title">
+				Girl
+			</p>
+			<p class="artist">
+				Pharell Williams
+			</p>
+		</artice>		
 		<artice class="song">
 			<figure class="image">
 				<img src="img/songs/girl.jpg" height="128" width="128" alt="Girl Pharell Williams" />
